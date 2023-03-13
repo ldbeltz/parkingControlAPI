@@ -18,7 +18,7 @@ public class ParkingSpotModel implements Serializable {
     @Column(nullable = false, unique = true, length = 10)
     private String parkingSpotNumber;
     @Column(nullable = false, unique = true, length = 7)
-    private String livensePlateCar;
+    private String licensePlateCar;
     @Column(nullable = false,  length = 70)
     private String brandCar;
     @Column(nullable = false,  length = 70)
@@ -50,12 +50,12 @@ public class ParkingSpotModel implements Serializable {
         this.parkingSpotNumber = parkingSpotNumber;
     }
 
-    public String getLivensePlateCar() {
-        return livensePlateCar;
+    public String getLicensePlateCar() {
+        return licensePlateCar;
     }
 
-    public void setLivensePlateCar(String livensePlateCar) {
-        this.livensePlateCar = livensePlateCar;
+    public void setLicensePlateCar(String licensePlateCar) {
+        this.licensePlateCar = licensePlateCar;
     }
 
     public String getBrandCar() {

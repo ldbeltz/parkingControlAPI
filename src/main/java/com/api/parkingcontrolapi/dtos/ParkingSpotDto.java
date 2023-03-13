@@ -8,7 +8,7 @@ public class ParkingSpotDto {
     private String parkingSpotNumber;
     @NotBlank
     @Size(max = 7)
-    private String livensePlateCar;
+    private String licensePlateCar;
     @NotBlank
     private String brandCar;
     @NotBlank
@@ -30,12 +30,12 @@ public class ParkingSpotDto {
         this.parkingSpotNumber = parkingSpotNumber;
     }
 
-    public String getLivensePlateCar() {
-        return livensePlateCar;
+    public String getLicensePlateCar() {
+        return licensePlateCar;
     }
 
-    public void setLivensePlateCar(String livensePlateCar) {
-        this.livensePlateCar = livensePlateCar;
+    public void setLicensePlateCar(String licensePlateCar) {
+        this.licensePlateCar = licensePlateCar;
     }
 
     public String getBrandCar() {
