@@ -14,10 +14,6 @@ public class ParkingControlApiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ParkingControlApiApplication.class, args);
-        System.out.println(new BCryptPasswordEncoder().encode("password"));
-        UUID uuid = UUID.randomUUID();
-        System.out.println(uuid);
-        System.out.println(uuid.version());
     }
 
     @GetMapping("/")
